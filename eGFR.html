@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  	<title>Bootstrap 4 Example</title>
+	  	<meta charset="utf-8">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="jumbotron jumbotron-fluid bg-dark" style="margin-bottom: 0; color: white;"> 	<!-- heading -->
+			<div class="container pl-5">
+				<h1>Độ lọc cầu thận online</h1>
+				<p>Trang web này cung cấp cho người dùng công cụ tính độ lọc cầu thận theo công thức MDRD một cách thuận tiện, chính xác.</p>
+			</div>
+		</div> 																		<!-- heading -->
+		<nav class="navbar navbar-expand-sm  navbar-dark bg-primary" > 	<!-- Contact -->
+			  <a class="navbar-brand" href="#">Contact</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+			    <ul class="navbar-nav">
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Facebook</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Gmail</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Zalo</a>
+			      </li>    
+			    </ul>
+			  </div>  
+		</nav> 														<!-- contact -->
+		<div class="container mt-4 p-5" style="background: #EEEEEE;height: 750px;"> <!-- Content -->
+			<h3>Tính độ lọc cầu thận theo công thức MDRD</h3>
+			<p>Hãy nhập các thông số cần thiết : </p>
+			<form> <!-- fieldform -->
+				<div class="input-group mb-3"> 	<!-- Creatinin -->
+					<div class="input-group-prepend">
+						<label for="creatinin"><span class="input-group-text" style="width: 10em; ">Nồng độ creatinin</span></label>
+					</div>
+					<input type="number" name="crea" class="form-control" placeholder="0 - 2" id="creatinin">
+				</div>							<!-- Creatinin -->
+				<div class="input-group mb-3"> 	<!-- tuoi -->
+					<div class="input-group-prepend">
+						<label for="age"><span class="input-group-text " style="width: 10em; ">Độ tuổi</span></label>
+					</div>
+					<input type="number" name="crea" class="form-control" placeholder="0 - 100" id="age">
+				</div> 							<!-- tuoi -->
+				<div class="input-group mb-3"> 	<!-- gioitinh -->
+					<div class="input-group-prepend">
+						<span class="input-group-text" style="width: 10em;">Giới tính</span>
+					</div>
+					<div class="form-check mt-2 ml-5 custom-control custom-radio">
+						<input type="radio" name="sex" class="form-check-input custom-control-input" id="nam" value="1"><label for="nam" class="custom-control-label">Nam</label>
+					</div>
+					<div class="form-check mt-2 ml-5 custom-control custom-radio">
+						<input type="radio" name="sex" class="form-check-input custom-control-input" id="nu" value="0"><label for="nu" class="custom-control-label">Nữ</label>
+					</div>
+				</div> 							<!-- gioitinh -->
+				<div class="input-group mb-3"> 	<!-- chungtoc -->
+					<div class="input-group-prepend">
+							<span class="input-group-text" style="width: 10em; ">Chủng tộc</span>
+					</div>
+					<div class="form-check mt-2 ml-5 custom-control custom-radio">
+						<input type="radio" name="chungtoc" class="form-check-input custom-control-input" id="phi" value="1"><label for="phi" class="custom-control-label">Mỹ gốc Phi</label>
+					</div>
+					<div class="form-check mt-2 ml-5 custom-control custom-radio">
+						<input type="radio" name="chungtoc" class="form-check-input custom-control-input" id="khac" value="0"><label for="khac" class="custom-control-label">Khác</label>
+					</div>
+				</div> 							<!-- chungtoc -->
+				<button type="button" class="btn btn-primary">Tính</button>
+			</form> <!-- fieldForm -->
+		</div>																	<!-- Content -->
+	</body>
+</html>
